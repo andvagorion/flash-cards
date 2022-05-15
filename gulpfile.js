@@ -4,16 +4,22 @@ const del = require('del');
 const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 
+const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 
+const crypto = require("crypto");
+
 const replace = require('gulp-token-replace');
 
+const es = require('event-stream');
+
+const randomHex = () => crypto.randomBytes(3).toString('hex');
 const today = (new Date()).toISOString().split('T')[0];
 
 const config = {
     main: {
-        version: today
+        version: `${today}-${randomHex()}`
     }
 };
 
@@ -22,9 +28,12 @@ const paths = {
         src: './src/sass/app.scss',
         dest: './dist/assets/'
     },
+    data: {
+        src: './src/data/phrases.txt',
+        dest: './dist/assets'
+    },
     scripts: {
         src: [
-            './src/js/cards.data.js',
             './src/js/util.js',
             './src/js/app.js'
         ],
@@ -41,7 +50,7 @@ const paths = {
 };
 
 function clean() {
-    return del(['./dist/assets']);
+    return del(['./dist']);
 }
 
 function styles() {
@@ -68,6 +77,35 @@ function assets() {
         .pipe(gulp.dest(paths.assets.dest));
 }
 
-var build = gulp.series(clean, gulp.parallel(html, styles, scripts, assets));
+function convertData() {
+    const splitLines = str => str.split(/\r?\n/);
+    const isEmpty = str => !str || str.length === 0;
+    const splitLine = str => str.split(' -> ');
+
+    return es.map(function (file, cb) {
+        const content = file.contents.toString();
+        const obj = splitLines(content)
+            .filter(line => !isEmpty(line))
+            .map(line => {
+                const parts = splitLine(line);
+                return { 'de': parts[0], 'en': parts[1] };
+            });
+
+        const jsData = `const Data = ${JSON.stringify(obj)};`;
+
+        file.contents = Buffer.from(jsData);
+
+        cb(null, file);
+    });
+}
+
+function data() {
+    return gulp.src(paths.data.src)
+        .pipe(convertData())
+        .pipe(rename('data.min.js'))
+        .pipe(gulp.dest(paths.data.dest));
+}
+
+var build = gulp.series(clean, gulp.parallel(html, styles, scripts, assets, data));
 
 exports.default = build;

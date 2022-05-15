@@ -11,6 +11,7 @@ class Cards {
 
     nextCard() {
         const cards = Util.randomCards(this.idx);
+        this.idx = cards[0];
         this.showCard(...cards);
     }
 
@@ -32,7 +33,7 @@ class Cards {
         this.container.insertAdjacentHTML('beforeend', html);
         const answersContainer = document.querySelector('.answers');
 
-        const answers = Util.shuffle([a1, a2, a3])
+        const answers = Util.shuffle([a1, a2, a3]);
         const correctIdx = answers.indexOf(a1);
 
         answers.forEach(answer => {
@@ -43,7 +44,7 @@ class Cards {
 
         const elements = document.querySelectorAll('.answer');
 
-        elements.forEach(el => el.addEventListener('mouseenter', function() { this.classList.remove('fade-in') }, { once: true }));
+        elements.forEach(el => el.addEventListener('mouseenter', function () { this.classList.remove('fade-in'); }, { once: true }));
 
         [0, 1, 2].forEach(i => {
             if (i === correctIdx) elements[i].addEventListener('click', this.correctAnswer.bind(this));
@@ -55,9 +56,11 @@ class Cards {
         this.points += 1;
         const target = (e.target.tagName === 'SPAN') ? e.target.parentNode : e.target;
 
+        document.querySelectorAll('.fade-in').forEach(el => el.classList.remove('fade-in'));
+
         target.classList.add('correct');
-        this.hideAll();
-        //setTimeout(() => this.nextCard(), 2000);
+        setTimeout(() => this.hideAll(), 1000);
+        setTimeout(() => this.nextCard(), 1500);
     }
 
     wrongAnswer(e) {

@@ -35,9 +35,9 @@ body {
 
 .container {
     width: 50%;
-    max-width: 500px;
+    max-width: 1000px;
     margin: 0 auto;
-    margin-top: 20%;
+    margin-top: 2em;
 }
 
 .card,
@@ -71,6 +71,8 @@ body {
     background-color: var(--answer-color);
     color: var(--answer-font-color);
 
+    text-align: center;
+
     &:hover {
         background-color: var(--answer-hover-color);
         cursor: pointer;
@@ -84,13 +86,18 @@ body {
     &.correct {
         background-color: var(--answer-right-color);
     }
+
+    span {
+        font-size: 1.2em;
+    }
 }
 
 .fade-in {
     animation: pulse-out 1s ease 0s 1 reverse forwards;
 }
 
-.fade-out, .fade-out:hover {
+.fade-out,
+.fade-out:hover {
     animation: pulse-out 1s ease 0s 1 normal forwards;
 }
 
@@ -119,5 +126,12 @@ body {
 
     100% {
         transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 90%;
+        max-width: 90%;
     }
 }

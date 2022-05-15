@@ -6,7 +6,7 @@ const Util = {
 
     randomCards: (curr) => {
         let next = curr;
-        while (next === null) Util.random(Data.length);
+        while (next === curr) next = Util.random(Data.length);
 
         const cards = [next]
 
