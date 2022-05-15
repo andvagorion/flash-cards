@@ -1,0 +1,123 @@
+body.light {
+    --main-background-color: #f3f8fd;
+    --scnd-background-color: #deebf9;
+
+    --card-color: #f39c13;
+    --card-font-color: #111;
+
+    --answer-color: #4e8cca;
+    --answer-font-color: #eee;
+    --answer-hover-color: #f39c13;
+    --answer-right-color: #36ae73;
+    --answer-wrong-color: #e84b3d;
+}
+
+body.dark {
+    --main-background-color: #063a4b;
+    --scnd-light-background-color: #084557;
+
+    --card-color: #fed167;
+    --card-font-color: #063a4b;
+
+    --answer-color: #118ab2;
+    --answer-font-color: #eee;
+    --answer-hover-color: #084557;
+    --answer-right-color: #50b694;
+    --answer-wrong-color: #e9476f;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    background: var(--main-background-color);
+    background: radial-gradient(circle, var(--main-background-color) 0%, var(--scnd-background-color) 100%);
+    color: var(--main-font-color);
+}
+
+.container {
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20%;
+}
+
+.card,
+.answer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card {
+    height: 200px;
+    position: relative;
+
+    background-color: var(--card-color);
+    color: var(--card-font-color);
+
+    font-size: 2em;
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.answer {
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 5px;
+
+    background-color: var(--answer-color);
+    color: var(--answer-font-color);
+
+    &:hover {
+        background-color: var(--answer-hover-color);
+        cursor: pointer;
+        animation: pulse .2s ease;
+    }
+
+    &.wrong {
+        background-color: var(--answer-wrong-color);
+    }
+
+    &.correct {
+        background-color: var(--answer-right-color);
+    }
+}
+
+.fade-in {
+    animation: pulse-out 1s ease 0s 1 reverse forwards;
+}
+
+.fade-out, .fade-out:hover {
+    animation: pulse-out 1s ease 0s 1 normal forwards;
+}
+
+@keyframes pulse-out {
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

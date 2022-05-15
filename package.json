@@ -1,0 +1,22 @@
+{
+  "name": "flash-cards",
+  "version": "1.0.0",
+  "description": "Flash cards for learning German verbs",
+  "main": "src/app.js",
+  "scripts": {
+    "dist": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Stefan Gaertner",
+  "license": "MIT",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-token-replace": "^1.1.5",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.51.0",
+    "uglify-js": "^3.15.5"
+  }
+}
