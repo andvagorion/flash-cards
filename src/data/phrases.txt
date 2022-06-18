@@ -30,7 +30,7 @@ an etwas denken -> to think of something
 etwas überdenken -> to think a matter over
 etwas gedenken -> to commemorate something
 jemandem gedenken -> to commemorate somebody
-jemandem etwas nicht verdenken -> to not hold something against somebody
+jemandem etwas nicht verdenken -> to hold something against somebody
 
 etwas machen -> to do something
 etwas ausmachen -> to turn something off
@@ -53,20 +53,23 @@ etwas schenken -> to gift something
 etwas verschenken -> to give something away
 
 sitzen -> to sit
+in etwas sitzen -> to sit in something
 sich setzen -> to sit down
 etwas ersetzen -> to replace something
 etwas durch etwas ersetzen -> to replace something by something
 
-mit jemandem sprechen -> to speak to somebody
+mit jemandem sprechen -> to speak / talk to somebody
 jemandem etwas versprechen -> to promise something to somebody
 sich versprechen -> to misspeak
 sich absprechen -> to agree on something
 jemandem etwas absprechen -> to deny somebody something
 etwas aussprechen -> to pronounce something
+etwas ansprechen -> to address something
+jemanden ansprechen -> to address somebody
 
 mit jemandem reden -> to talk to somebody
 jemandem etwas ausreden -> to talk somebody out of something
-jemandem ausreden lassen -> to let somebody finish talking
+jemanden ausreden lassen -> to let somebody finish talking
 auf jemanden einreden -> to talk at somebody
 sich etwas einreden -> to talk yourself into something
 jemandem etwas einreden -> to talk somebody into believing something
@@ -88,7 +91,7 @@ sich mit etwas umgeben -> to surround yourself with something
 etwas sein lassen -> to leave something be
 jemandem etwas überlassen -> leave something to somebody
 jemanden verlassen -> to leave somebody / to break up with somebody
-jemandem vorlassen -> to let somebody go in front (of you)
+jemanden vorlassen -> to let somebody go in front (of you)
 sich auf jemanden verlassen -> to have trust in somebody
 etwas auslassen -> to omit something
 etwas anlassen -> to leave something on
@@ -104,6 +107,83 @@ sich übernehmen -> to overstrain, to overreach oneself
 sich etwas vornehmen -> to make a plan for something
 abnehmen -> to lose weight
 etwas annehmen -> to accept something
-jemandem vernehmen -> to question somebody
+jemanden vernehmen -> to question somebody
 etwas vernehmen -> to notice / hear something
 jemanden beim Wort nehmen -> to take somebody by their word
+
+etwas zählen -> to count something
+von etwas erzählen -> to tell about something
+von jemandem erzählen -> to tell about somebody
+jemandem etwas erzählen -> to tell something to somebody
+
+jemanden treffen -> to meet someone
+sich mit jemandem treffen -> to meet someone
+
+etwas spielen -> to play something
+mit jemandem etwas spielen -> to play something with somebody
+
+etwas melden -> to report something
+sich melden -> to raise one's hand
+sich bei jemandem melden -> to get in touch with someone / to report so someone
+
+etwas kennen -> to know something
+jemanden kennen -> to know someone
+jemanden kennenlernen -> to meet someone / to get to know someone
+
+jemanden witzig finden -> to find someony funny
+jemanden gut finden -> to like somebody
+
+etwas verstehen -> to understand something
+jemanden verstehen -> to understand someone
+sich mit jemandem gut verstehen -> to get along well with someone
+
+etwas bieten -> to offer something
+
+etwas schließen -> to close something
+etwas abschließen -> to lock something
+etwas aufschließen -> to unlock something
+
+etwas braten -> to fry / roast something (food)
+etwas anbraten -> to gently roast something (food)
+
+jemanden fangen -> to catch someone
+etwas anfangen -> to start something
+mit etwas nichts anfangen können -> to not be into something
+
+jemanden anrufen -> to call someone
+
+etwas ansehen -> to look at something
+wie etwas aussehen -> to look like something
+wie jemand aussehen -> to look like somebody
+etwas übersehen -> to overlook something
+jemanden übersehen -> to overlook somebody
+
+etwas anstoßen -> to initiate something
+auf etwas anstoßen -> to raise one's glass to toast something
+auf jemanden anstoßen -> to raise one's glass to toast someone
+jemanden anstoßen -> to nudge someone
+
+etwas ziehen -> to pull something
+etwas anziehen -> to put on something (clothes)
+etwas ausziehen -> to take off something (clothes)
+sich anziehen -> to put on clothes
+sich ausziehen -> to take of clothes
+
+etwas essen -> to eat something
+etwas aufessen -> to finish eating / fully eat something
+
+etwas leihen -> to borrow something
+etwas verleihen -> to lend something
+jemandem etwas leihen -> to lend something to somebody
+jemandem etwas verleihen -> to award something to somebody
+
+aus etwas aussteigen -> to exit something
+in etwas einsteigen -> to enter something
+
+etwas gestalten -> to create / design something
+jemandem bei etwas helfen -> to help someone with something
+etwas zusammenfassen -> to summarize something
+sich für etwas interessieren -> to be interested in something
+von etwas abweichen -> to differ from something
+
+etwas verlieren -> to lose something
